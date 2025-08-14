@@ -1,0 +1,82 @@
+<!-- Declaración del tipo de documento HTML5 -->
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8"> <!-- Soporte para caracteres especiales -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Adaptación a móviles -->
+    <title>Tabla con Formulario</title>
+</head>
+
+<body>
+    <!-- Encabezado principal -->
+    <h1>Registro de Estudiantes</h1>
+
+    <!-- Formulario para ingresar datos -->
+    <h2>Agregar nuevo estudiante</h2>
+    <form>
+        <!-- Campo nombre -->
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre">
+        <br><br>
+
+        <!-- Campo edad -->
+        <label for="edad">Edad:</label>
+        <input type="number" id="edad" name="edad">
+        <br><br>
+
+        <!-- Campo calificación -->
+        <label for="calificacion">Calificación:</label>
+        <input type="number" id="calificacion" name="calificacion" step="0.1">
+        <br><br>
+
+        <!-- Botón enviar -->
+        <input type="submit" value="Agregar">
+    </form>
+
+    <hr> <!-- Línea separadora -->
+
+    <!-- Tabla para mostrar datos -->
+    <h2>Listado de estudiantes</h2>
+    <table border="1">
+        <!-- Encabezado -->
+        <thead>
+            <tr>
+                <th>Nombre</th>
+                <th>Edad</th>
+                <th>Calificación</th>
+            </tr>
+        </thead>
+
+        <!-- Cuerpo de la tabla (datos de ejemplo) -->
+        <tbody>
+            <tr>
+                <td>Juan Pérez</td>
+                <td>16</td>
+                <td>4.5</td>
+            </tr>
+            <tr>
+                <td>María López</td>
+                <td>17</td>
+                <td>4.8</td>
+            </tr>
+        </tbody>
+
+        <!-- Pie de la tabla -->
+        <tfoot>
+            <tr>
+                <td colspan="3">Total de estudiantes: 2</td>
+            </tr>
+        </tfoot>
+    </table>
+
+    <!-- Nota final -->
+    <p>Nota: En HTML puro el formulario no guarda datos, para hacerlo funcional se necesita JavaScript o un lenguaje de servidor como PHP.</p>
+
+    <!-- Pie de página -->
+    <footer>
+        <p>© 2025 Curso de Programación Web - Profesor Harol Torres</p>
+    </footer>
+</body>
+
+</html>

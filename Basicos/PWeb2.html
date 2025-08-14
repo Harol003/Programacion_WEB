@@ -1,0 +1,63 @@
+<!-- Declaración del tipo de documento HTML5 -->
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8"> <!-- Soporte para caracteres especiales -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Adaptación a móviles -->
+    <title>Ejemplo de Tabla en HTML</title>
+</head>
+
+<body>
+    <!-- Encabezado principal -->
+    <h1>Tabla de Estudiantes</h1>
+
+    <!-- Explicación breve -->
+    <p>Esta tabla muestra un listado de estudiantes y sus calificaciones.</p>
+
+    <!-- Inicio de la tabla -->
+    <table border="1"> <!-- Atributo border para ver los bordes (HTML puro, sin CSS) -->
+        
+        <!-- Encabezado de la tabla -->
+        <thead>
+            <tr> <!-- Fila -->
+                <th>Nombre</th> <!-- Celda de encabezado -->
+                <th>Edad</th>
+                <th>Calificación</th>
+            </tr>
+        </thead>
+
+        <!-- Cuerpo de la tabla -->
+        <tbody>
+            <tr>
+                <td>Juan Pérez</td> <!-- Celda normal -->
+                <td>16</td>
+                <td>4.5</td>
+            </tr>
+            <tr>
+                <td>María López</td>
+                <td>17</td>
+                <td>4.8</td>
+            </tr>
+            <tr>
+                <td>Carlos Gómez</td>
+                <td>15</td>
+                <td>4.2</td>
+            </tr>
+        </tbody>
+
+        <!-- Pie de la tabla -->
+        <tfoot>
+            <tr>
+                <td colspan="3">Total de estudiantes: 3</td> <!-- colspan combina columnas -->
+            </tr>
+        </tfoot>
+    </table>
+
+    <!-- Pie de página -->
+    <footer>
+        <p>© 2025 Curso de Programación Web - Profesor Harol Torres</p>
+    </footer>
+</body>
+
+</html>

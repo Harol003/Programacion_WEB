@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio - Estudiante</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+
+<body>
+    <!-- Encabezado -->
+    <header>
+        <h1>Mi Portafolio</h1>
+        <p>Desarrollador en formación</p>
+    </header>
+
+    <!-- Menú de navegación -->
+    <nav>
+        <ul>
+            <li><a href="#presentacion" class="active">Inicio</a></li>
+            <li><a href="#habilidades">Habilidades</a></li>
+            <li><a href="#proyectos">Proyectos</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <!-- Presentación -->
+        <section id="presentacion">
+            <img src="foto.jpg" alt="Foto del estudiante" class="foto">
+            <h2>Hola, soy Juan Pérez</h2>
+            <p>Soy estudiante de programación web, apasionado por el desarrollo de aplicaciones y el diseño de interfaces.</p>
+        </section>
+
+        <!-- Habilidades -->
+        <section id="habilidades">
+            <h2>Habilidades</h2>
+            <ul>
+                <li>HTML5</li>
+                <li>CSS3</li>
+                <li>JavaScript</li>
+                <li>Git y GitHub</li>
+            </ul>
+        </section>
+
+        <!-- Proyectos -->
+        <section id="proyectos">
+            <h2>Mis Proyectos</h2>
+            <div class="tarjetas">
+                <div class="tarjeta">
+                    <h3>Proyecto 1</h3>
+                    <p>Descripción breve del proyecto realizado.</p>
+                </div>
+                <div class="tarjeta">
+                    <h3>Proyecto 2</h3>
+                    <p>Descripción breve del proyecto realizado.</p>
+                </div>
+                <div class="tarjeta">
+                    <h3>Proyecto 3</h3>
+                    <p>Descripción breve del proyecto realizado.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contacto -->
+        <section id="contacto">
+            <h2>Contacto</h2>
+            <form>
+                <label>Nombre:</label>
+                <input type="text" name="nombre" required>
+
+                <label>Correo:</label>
+                <input type="email" name="correo" required>
+
+                <label>Mensaje:</label>
+                <textarea name="mensaje" required></textarea>
+
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </main>
+
+    <!-- Pie de página -->
+    <footer>
+        <p>© 2025 - Portafolio de Juan Pérez</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

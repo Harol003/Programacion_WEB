@@ -1,0 +1,128 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background: #f4f4f4;
+}
+
+/* Encabezado */
+header {
+    background: #34495e;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Menú */
+nav {
+    background: #2c3e50;
+    position: sticky;
+    top: 0;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    flex: 1;
+}
+
+nav ul li a {
+    display: block;
+    text-align: center;
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+    transition: background 0.3s;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+    background: #1abc9c;
+}
+
+/* Presentación */
+#presentacion {
+    text-align: center;
+    padding: 20px;
+}
+
+.foto {
+    width: 150px;
+    border-radius: 50%;
+}
+
+/* Habilidades */
+#habilidades ul {
+    background: white;
+    padding: 20px;
+    list-style: none;
+    max-width: 400px;
+    margin: auto;
+    border-radius: 8px;
+}
+
+#habilidades li {
+    padding: 5px 0;
+}
+
+/* Proyectos */
+.tarjetas {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.tarjeta {
+    background: white;
+    padding: 15px;
+    width: 250px;
+    border-radius: 8px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+
+/* Contacto */
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: auto;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+form label {
+    margin-top: 10px;
+}
+
+form input, form textarea, form button {
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+form button {
+    background: #1abc9c;
+    color: white;
+    border: none;
+    margin-top: 15px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background: #16a085;
+}
+
+/* Pie */
+footer {
+    background: #34495e;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}

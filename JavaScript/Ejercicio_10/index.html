@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini Blog con JavaScript</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+
+<body>
+    <div id="contenedor">
+
+        <!-- Encabezado con saludo dinámico -->
+        <header id="encabezado">
+            <h1>Bienvenido a mi Blog</h1>
+            <p id="saludo">Hola visitante 👋</p>
+        </header>
+
+        <!-- Formulario para pedir el nombre -->
+        <section id="formulario-nombre">
+            <input type="text" id="nombreInput" placeholder="Escribe tu nombre">
+            <button onclick="mostrarNombre()">Enviar</button>
+        </section>
+
+        <!-- Contenido de ejemplo -->
+        <main id="contenido">
+            <h2>Artículo de ejemplo</h2>
+            <p>Este es un artículo de ejemplo para mostrar cómo interactúa JavaScript con HTML.</p>
+        </main>
+
+        <!-- Pie -->
+        <footer id="pie">
+            <p>© 2025 - Blog Interactivo</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

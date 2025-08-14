@@ -1,0 +1,92 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background: #f4f4f4;
+    color: #333;
+}
+
+/* Encabezado */
+header {
+    background: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+/* Menú de navegación */
+nav {
+    background: #34495e;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Contenido principal */
+main {
+    display: flex;
+    padding: 20px;
+    gap: 20px;
+}
+
+/* Sección principal */
+section {
+    flex: 3;
+    background: white;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+/* Artículos */
+article {
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+/* Barra lateral */
+aside {
+    flex: 1;
+    background: #ecf0f1;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+/* Pie de página */
+footer {
+    background: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    main {
+        flex-direction: column;
+    }
+}
