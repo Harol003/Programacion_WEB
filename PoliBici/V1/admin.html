@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Admin</title>
+
+<link rel="stylesheet" href="estilos.css">
+</head>
+
+<body>
+
+<header class="header">
+<h1>Administrador</h1>
+</header>
+
+<main>
+
+<!-- LOGIN -->
+<div id="loginDiv">
+<h2>Login</h2>
+
+<input id="usuario" placeholder="usuario">
+<input id="clave" type="password" placeholder="clave">
+
+<button onclick="login()">Ingresar</button>
+
+<p id="mensaje"></p>
+</div>
+
+<!-- PANEL ADMIN -->
+<div id="panelAdmin" class="oculto">
+
+<h2>Panel administrador</h2>
+
+<h3>Agregar producto</h3>
+
+<input id="nombreProd" placeholder="Nombre">
+<input id="precioProd" placeholder="Precio">
+
+<button onclick="agregarProducto()">Agregar</button>
+
+<h3>Lista de productos</h3>
+<div id="adminProductos"></div>
+
+<button onclick="cerrarSesion()">Cerrar sesion</button>
+
+</div>
+
+</main>
+
+<script src="script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Productos</title>
+
+<link rel="stylesheet" href="estilos.css">
+</head>
+
+<body>
+
+<header class="header">
+<h1>🚲 Poli Bici</h1>
+
+<nav class="nav">
+<a href="index.html">Inicio</a>
+<a href="productos.html">Productos</a>
+<a href="contacto.html">Contacto</a>
+<a href="admin.html">Admin</a>
+</nav>
+</header>
+
+<main>
+
+<h2>Productos</h2>
+<div id="listaProductos"></div>
+
+<h2>Cotizacion</h2>
+<div id="carrito"></div>
+<h3>Total: $<span id="total">0</span></h3>
+
+<button onclick="exportarPDF()">PDF</button>
+<button onclick="exportarExcel()">Excel</button>
+<button onclick="vaciarCarrito()">Vaciar</button>
+
+</main>
+
+<footer class="footer">
+<p>Poli Bici</p>
+</footer>
+
+<script src="script.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="author" content="Harol H. Torres Neuta">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Admin - Poli Bici</title>
+
+<link rel="stylesheet" href="estilos.css">
+</head>
+
+<body>
+
+<!-- HEADER CON MENU -->
+<header class="header">
+    <h1>Panel Administrador</h1>
+
+    <nav class="nav">
+        <a href="index.html">Inicio</a>
+        <a href="productos.html">Productos</a>
+        <a href="contacto.html">Contacto</a>
+    </nav>
+</header>
+
+<main>
+
+<!-- LOGIN -->
+<div id="loginDiv">
+<h2>Login</h2>
+
+<input id="usuario" placeholder="usuario">
+<input id="clave" type="password" placeholder="clave">
+
+<button onclick="login()">Ingresar</button>
+
+<p id="mensaje"></p>
+</div>
+
+<!-- PANEL ADMIN -->
+<div id="panelAdmin" class="oculto">
+
+<h2>Gestion de productos</h2>
+
+<input id="nombreProd" placeholder="Nombre producto">
+<input id="precioProd" placeholder="Precio">
+
+<button onclick="agregarProducto()">Agregar producto</button>
+
+<!-- TABLA PRODUCTOS -->
+<table border="1" id="tablaProductos">
+<thead>
+<tr>
+<th>Nombre</th>
+<th>Precio</th>
+<th>Accion</th>
+</tr>
+</thead>
+
+<tbody id="adminProductos"></tbody>
+</table>
+
+<hr>
+
+<!-- COTIZACIONES -->
+<h2>Cotizaciones (carrito actual)</h2>
+
+<table border="1">
+<thead>
+<tr>
+<th>Producto</th>
+<th>Precio</th>
+</tr>
+</thead>
+
+<tbody id="tablaCotizacion"></tbody>
+</table>
+
+<h3>Total: $<span id="totalAdmin">0</span></h3>
+
+<br>
+<button onclick="cerrarSesion()">Cerrar sesion</button>
+
+</div>
+
+</main>
+
+<script src="script.js"></script>
+
+</body>
+</html>

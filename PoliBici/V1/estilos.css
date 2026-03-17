@@ -1,0 +1,35 @@
+body{
+font-family:Arial;
+margin:0;
+}
+
+.header{
+display:flex;
+justify-content:space-between;
+background:#1e3a5f;
+color:white;
+padding:15px;
+}
+
+.nav a{
+color:white;
+margin:10px;
+text-decoration:none;
+}
+
+.producto{
+border:1px solid gray;
+margin:10px;
+padding:10px;
+}
+
+.footer{
+background:black;
+color:white;
+padding:10px;
+margin-top:20px;
+}
+
+.oculto{
+display:none;
+}

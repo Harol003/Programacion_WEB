@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="author" content="Harol H. Torres Neuta">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PoliCar Avanzado</title>
+
+<link rel="stylesheet" href="estilos.css">
+</head>
+
+<body>
+
+<header class="header">
+<h1>🚗 PoliCar Avanzado</h1>
+</header>
+
+<main class="contenedor">
+
+<!-- PANTALLA -->
+<div id="pantalla" class="pantalla">0</div>
+
+<!-- BOTONES -->
+<div class="calculadora">
+
+<button onclick="agregarNumero(7)">7</button>
+<button onclick="agregarNumero(8)">8</button>
+<button onclick="agregarNumero(9)">9</button>
+<button onclick="operacion('/')">/</button>
+
+<button onclick="agregarNumero(4)">4</button>
+<button onclick="agregarNumero(5)">5</button>
+<button onclick="agregarNumero(6)">6</button>
+<button onclick="operacion('*')">*</button>
+
+<button onclick="agregarNumero(1)">1</button>
+<button onclick="agregarNumero(2)">2</button>
+<button onclick="agregarNumero(3)">3</button>
+<button onclick="operacion('-')">-</button>
+
+<button onclick="agregarNumero(0)">0</button>
+<button onclick="limpiar()">C</button>
+<button onclick="calcular()">=</button>
+<button onclick="operacion('+')">+</button>
+
+</div>
+
+<hr>
+
+<!-- HISTORIAL -->
+<h2>Historial</h2>
+
+<div id="historial"></div>
+
+<button onclick="limpiarHistorial()">Limpiar historial</button>
+
+</main>
+
+<footer class="footer">
+<p>PoliCar 2026</p>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>

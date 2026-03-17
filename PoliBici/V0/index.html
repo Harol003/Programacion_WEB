@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="author" content="Harol H. Torres Neuta">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PoliBici - Tienda de Bicicletas</title>
+<link rel="stylesheet" href="estilos.css">
+</head>
+
+<body>
+
+<header class="header">
+<h1>🚲 PoliBici - Tu tienda de bicicletas</h1>
+<nav class="nav">
+<a href="#">Inicio</a>
+<a href="#">Productos</a>
+<a href="#">Experiencias</a>
+<a href="#">Cotizacion</a>
+<a href="#">Contacto</a>
+</nav>
+</header>
+
+<main>
+
+<h2>Bienvenidos a PoliBici</h2>
+<p>En PoliBici encuentras bicicletas de todos los estilos: montaña, urbana y de ruta. Descubre nuestros productos interactivos.</p>
+
+<!-- CONTENEDORES DE PRODUCTOS -->
+<div class="container-grid">
+
+<!-- ITEM 1 -->
+<div class="container item1">
+<img src="img/mtb.jpg" alt="MTB Pro">
+<h3>MTB Pro</h3>
+<p>Bicicleta de montaña profesional</p>
+<button onclick="mostrarDetalle('MTB Pro')">Ver detalle</button>
+</div>
+
+<!-- ITEM 2 -->
+<div class="container item2">
+<img src="img/ruta.jpg" alt="Ruta Speed">
+<h3>Ruta Speed</h3>
+<p>Bicicleta de ruta ligera y veloz</p>
+<button onclick="mostrarDetalle('Ruta Speed')">Ver detalle</button>
+</div>
+
+<!-- ITEM 3 -->
+<div class="container item3">
+<img src="img/urbana.jpg" alt="Urbana City">
+<h3>Urbana City</h3>
+<p>Bicicleta urbana para ciudad</p>
+<button onclick="mostrarDetalle('Urbana City')">Ver detalle</button>
+</div>
+
+<!-- ITEM 4 -->
+<div class="container item4">
+<img src="img/niños.jpg" alt="Niños Bike">
+<h3>Niños Bike</h3>
+<p>Bicicletas para niños seguras y divertidas</p>
+<button onclick="mostrarDetalle('Niños Bike')">Ver detalle</button>
+</div>
+
+</div>
+
+<!-- DETALLE INTERACTIVO -->
+<div id="detalle" class="detalle"></div>
+
+</main>
+
+<footer class="footer">
+<p>© 2026 PoliBici - Bogotá, Colombia</p>
+</footer>
+
+<script>
+// ===============================
+// FUNCION INTERACTIVA PARA MOSTRAR DETALLE
+// ===============================
+function mostrarDetalle(nombre){
+document.getElementById("detalle").innerHTML=
+"<h3>Detalle: "+nombre+"</h3><p>Precio y caracteristicas de "+nombre+" disponibles en tienda.</p>";
+document.getElementById("detalle").scrollIntoView({behavior:'smooth'});
+}
+</script>
+
+</body>
+</html>
