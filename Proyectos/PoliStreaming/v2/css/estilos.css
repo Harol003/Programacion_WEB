@@ -1,0 +1,155 @@
+/* =========================
+   ESTILOS GENERALES
+========================= */
+body {
+    font-family: Arial;
+    margin: 0;
+    background: linear-gradient(135deg, #0f172a, #1e293b);
+    color: white;
+}
+
+/* =========================
+   LOGIN
+========================= */
+
+/* Contenedor centrado */
+.login-body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Caja login */
+.login-container {
+    background-color: #1e293b;
+    padding: 30px;
+    border-radius: 15px;
+    width: 300px;
+    box-shadow: 0px 0px 20px rgba(0,0,0,0.6);
+    text-align: center;
+}
+
+/* Inputs login */
+.login-container input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 8px;
+    border: none;
+}
+
+/* Boton login */
+.login-container button {
+    width: 100%;
+    padding: 12px;
+    background-color: #22c55e;
+    border: none;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.login-container button:hover {
+    background-color: #16a34a;
+}
+
+/* Mensaje */
+#mensaje {
+    margin-top: 10px;
+    color: #f87171;
+}
+
+/* =========================
+   DASHBOARD
+========================= */
+
+/* Header */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    background-color: #020617;
+}
+
+/* Boton cerrar */
+.btn-cerrar {
+    background-color: #ef4444;
+    padding: 10px 15px;
+    border: none;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+/* Contenedor principal */
+.contenedor {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 30px;
+    flex-wrap: wrap;
+}
+
+/* Tarjetas */
+.card {
+    background-color: #1e293b;
+    padding: 25px;
+    border-radius: 15px;
+    width: 300px;
+    box-shadow: 0px 0px 15px rgba(0,0,0,0.5);
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.03);
+}
+
+/* Inputs dashboard */
+.card input,
+.card select {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 8px;
+    border: none;
+}
+
+/* Boton principal */
+.btn-principal {
+    width: 100%;
+    padding: 12px;
+    background-color: #22c55e;
+    border: none;
+    color: white;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.btn-principal:hover {
+    background-color: #16a34a;
+}
+
+/* Resultado */
+.resultado-box {
+    margin-top: 15px;
+    padding: 10px;
+    background-color: #020617;
+    border-radius: 10px;
+    color: #38bdf8;
+}
+
+/* Historial */
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    background-color: #020617;
+    margin: 8px 0;
+    padding: 8px;
+    border-radius: 8px;
+}

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Panel - PoliStreaming</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+
+    <!-- HEADER -->
+    <header class="header">
+        <h2 id="bienvenida"></h2>
+        <button class="btn-cerrar" onclick="cerrarSesion()">Cerrar sesión</button>
+    </header>
+
+    <!-- CONTENEDOR PRINCIPAL -->
+    <div class="contenedor">
+
+        <!-- TARJETA COTIZADOR -->
+        <div class="card">
+
+            <h3>🎬 Cotizador de Streaming</h3>
+
+            <label>Plataforma</label>
+            <select id="servicio">
+                <option value="netflix">Netflix</option>
+                <option value="amazon">Amazon</option>
+                <option value="plex">Plex</option>
+            </select>
+
+            <label>Cantidad de pantallas</label>
+            <input type="number" id="pantallas" placeholder="Ej: 2">
+
+            <label>Tiempo</label>
+            <select id="meses">
+                <option value="1">1 Mes</option>
+                <option value="3">3 Meses</option>
+                <option value="6">6 Meses (Descuento)</option>
+            </select>
+
+            <button class="btn-principal" onclick="cotizar()">Calcular Cotización</button>
+
+            <div id="resultado" class="resultado-box"></div>
+        </div>
+
+        <!-- TARJETA HISTORIAL -->
+        <div class="card">
+
+            <h3>📊 Historial de Cotizaciones</h3>
+
+            <ul id="historial"></ul>
+
+        </div>
+
+    </div>
+
+</body>
+
+<!-- Scripts -->
+<script src="js/app.js"></script>
+<script src="js/cotizador.js"></script>
+
+</html>

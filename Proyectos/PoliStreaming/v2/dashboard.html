@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Dashboard - PoliStreaming</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header class="header">
+        <h2 id="bienvenida"></h2>
+        <button class="btn-cerrar" onclick="cerrarSesion()">Cerrar sesión</button>
+    </header>
+
+    <div class="contenedor">
+
+        <!-- COTIZADOR -->
+        <div class="card">
+            <h3>🎬 Cotizador</h3>
+
+            <select id="servicio"></select>
+
+            <input type="number" id="pantallas" placeholder="Cantidad">
+
+            <select id="meses">
+                <option value="1">1 Mes</option>
+                <option value="3">3 Meses</option>
+                <option value="6">6 Meses</option>
+            </select>
+
+            <button class="btn-principal" onclick="cotizar()">Cotizar</button>
+
+            <div id="resultado" class="resultado-box"></div>
+        </div>
+
+        <!-- ESTADISTICAS -->
+        <div class="card">
+            <h3>📊 Estadisticas</h3>
+            <p>Vendidas: <span id="vendidos"></span></p>
+            <p>Disponibles: <span id="stock"></span></p>
+        </div>
+
+        <!-- HISTORIAL -->
+        <div class="card">
+            <h3>📜 Historial</h3>
+            <ul id="historial"></ul>
+        </div>
+
+        <!-- ADMIN -->
+        <div class="card" id="adminPanel">
+            <h3>⚙️ Admin</h3>
+
+            <input type="text" id="nuevoServicio" placeholder="Servicio">
+            <input type="number" id="precioServicio" placeholder="Precio">
+
+            <button onclick="agregarServicio()">Agregar</button>
+        </div>
+
+    </div>
+
+    <script src="js/app.js"></script>
+    <script src="js/cotizador.js"></script>
+
+</body>
+</html>

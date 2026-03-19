@@ -1,0 +1,22 @@
+**************************************
+APACHE 
+**************************************
+
+sudo apt update && sudo apt upgrade -y
+sudo apt install apache2 -y
+sudo systemctl start apache2
+sudo systemctl enable apache2
+sudo systemctl status apache2
+cd /var/www/HTML
+sudo cp -r polistreaming /var/www/html/
+
+**************************************
+OPCION 2 NODEJS
+**************************************
+
+sudo apt install nodejs npm -y
+node -v
+npm -v
+sudo npm install -g serve
+cd polistreaming
+serve
